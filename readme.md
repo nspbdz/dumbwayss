@@ -1,0 +1,1 @@
+untuk membuka/melihat hasil jawaban soal no 4 bagian b dengan caera memasukan file ke dalam folder xampp/htdocs lalu kamu bisa membuka lewat localhost/namafolder/index.php
