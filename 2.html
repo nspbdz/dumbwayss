@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to create an array, then display its length.</p>
+
+<p>The highest number is <span id="demo"></span>.</p>
+<p>The highest number is <span id="demos"></span>.</p>
+<p>The highest number is <span id="demos1"></span>.</p>
+
+
+<script> 
+  function func() { 
+    
+      // Original Array 
+      var arr = [1,4,6,2,6,8,9,21,20, 14, 3,6,11,1,1,2,3,4,6,8,9,2,1,5,2,5,6,8,3,2]; 
+      console.log(Math.max(arr));
+    
+      // Extracted array 
+      var new_arr = arr.slice(0,10); 
+      
+  for (var i = 0; i < new_arr.length; i++) {
+    
+    // document.write(new_arr[i]);  
+    document.write("<br>"); 
+    console.log(Math.max(new_arr));
+    // document.write(Math.max(new_arr[i])); 
+      
+  }
+      // document.write(arr); 
+      document.write("<br>"); 
+      // document.write(new_arr); 
+  } 
+  func(); 
+  </script> 
+<!-- <script>
+
+  var fruits = [1,4,6,2,6,8,9,21,20, 14, 3,6,11,1,1,2,3,4,6,8,9,2,1,5,2,5,6,8,3,2];
+
+
+  fruits.sort(function(a, b){return b-a});
+  document.getElementById("demo").innerHTML = fruits[0];
+
+  
+  for (var i = 0; i < fruits.slice(0,9); i++) {
+    console.log(fruits[i]);
+    // fruits.sort(function(a, b){return b-a});
+  document.getElementById("demos").innerHTML = fruits[i];
+
+  }
+  for (var i = 0; i < fruits.slice(10,9); i++) {
+    console.log(fruits[i]);
+    // fruits.sort(function(a, b){return b-a});
+  document.getElementById("demos").innerHTML = fruits[i];
+
+  }
+  // for (var i = 10; i < fruits.length/2; i++) {
+  //   // console.log(fruits[i]);
+  //   fruits.sort(function(a, b){return b-a});
+  // document.getElementById("demos1").innerHTML = fruits[20];
+
+  // }
+ 
+  </script> -->
+  
+
+</body>
+</html>
